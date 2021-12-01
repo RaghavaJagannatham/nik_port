@@ -1,5 +1,8 @@
+
 #skills {
-  background-image:url(https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+  background-image:url(https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80);
+  background-repeat: no-repeat;
+
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
@@ -44,7 +47,9 @@
   }
   .bar::before{
     content:  attr(data-skill);
-    background-color: red;
+    /* background-color: rgba( 220, 118, 51,0.8); */
+    background-color: rgba(0,205,172,0.5);
+    /*  220, 118, 51  ,   52, 73, 94       ,          93, 173, 226,     165, 105, 189,      205, 97, 85 */
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -55,10 +60,21 @@
   }
   
   .bar.front::before{
-    background-color: #ffcc33;
+    /* background-color: rgb(52, 73, 94, 0.8); */
+    background-color: rgba(0,205,172,0.8);
+  }
+  .bar.front2::before{
+    /* background-color: rgba(165, 105, 189,0.8); */
+    background-color: rgba(0,205,172,0.8);
   }
   .bar.back::before{
-    background-color: #a6cfe3;
+    /* background-color:rgba(93, 173, 226,0.8); */
+    background-color: rgba(0,205,172,0.8);
+  }
+  .bar.back2::before{
+    /* background-color:rgba(93, 173, 226,0.5); */
+    /* background-color: rgba(205, 97, 85 ,0.8); */
+    background-color: rgba(0,205,172,0.8);
   }
   
   .bar.learning::before{
