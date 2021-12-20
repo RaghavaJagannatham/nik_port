@@ -1,0 +1,95 @@
+
+#skills {
+  background-image:url(https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80);
+  background-repeat: no-repeat;
+
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -10rem;
+  margin-bottom: -1px;
+  color: #fff;
+}
+.containerr{
+    width: 50%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: rgba(0,0,0,0);
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    /* background-color: rgba( 220, 118, 51,0.8); */
+    background-color: rgba(0,205,172,0.5);
+    /*  220, 118, 51  ,   52, 73, 94       ,          93, 173, 226,     165, 105, 189,      205, 97, 85 */
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 5s 0s;
+    -webkit-animation: load 10s 0s;
+    -moz-animation: load 5s 0s;
+    -o-animation: load 5s 0s;
+  }
+  
+  .bar.front::before{
+    /* background-color: rgb(52, 73, 94, 0.8); */
+    background-color: rgba(0,205,172,0.8);
+  }
+  .bar.front2::before{
+    /* background-color: rgba(165, 105, 189,0.8); */
+    background-color: rgba(0,205,172,0.8);
+  }
+  .bar.back::before{
+    /* background-color:rgba(93, 173, 226,0.8); */
+    background-color: rgba(0,205,172,0.8);
+  }
+  .bar.back2::before{
+    /* background-color:rgba(93, 173, 226,0.5); */
+    /* background-color: rgba(205, 97, 85 ,0.8); */
+    background-color: rgba(0,205,172,0.8);
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+/*# sourceMappingURL=index.accecc07.css.map */
